@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Triangle Classifier</title>
+
+	<script src="./script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap">
+</head>
+
+<body>
+	<h1>Triangle Classifier</h1>
+	<p>The Triangle Classification Tool helps users determine the type of a triangle based on the lengths of its sides.</p>
+	<div>
+		<form>
+			<div class="form-title">Enter the length of sides</div>
+			<div>
+				<table>
+					<tr>
+						<th class="label-column"><label for="">Side 1</label></th>
+						<th class="input-column"><input type="text" id="side1" name="side1" required></th>
+					</tr>
+					<tr class="side-error">
+						<th class="label-column"></th>
+						<th class="error-column" id="side1Error"></th>
+					</tr>
+					<tr>
+						<th class="label-column"><label for="">Side 2</label></th>
+						<th class="input-column"><input type="text" id="side2" name="side2" required></th>
+					</tr>
+					<tr class="side-error">
+						<th class="label-column"></th>
+						<th class="error-column" id="side2Error"></th>
+					</tr>
+					<tr>
+						<th class="label-column"><label for="">Side 3</label></th>
+						<th class="input-column"><input type="text" id="side3" name="side3" required></th>
+					</tr>
+					<tr class="side-error">
+						<th class="label-column"></th>
+						<th class="error-column" id="side3Error"></th>
+					</tr>
+				</table>
+			</div>
+			<table>
+				<tr>
+					<th class="label-column"></th>
+					<th class="title-result">Result</th>
+				</tr>
+				<tr>
+					<th class="label-column"><button type="submit" id="submitButton" onclick="handleSubmit(event)">Enter</button></th>
+					<th class="input-column"><input type="text" id="result" readonly></th>
+				</tr>
+			</table>
+		</form>
+		<div id="result-image-container"></div>
+		<div id="recommendations-container"></div>
+	</div>
+</body>
+
+</html>
+
+<footer>
+	<hr/>
+	<div><b>KMITL IT ENTREPRENEURSHIP 2024</b></div>
+	<div>By 64010009, 64010312</div>
+	<div>Design PDF from 64010459 and crew, here <a href="https://drive.google.com/file/d/1Gp_hQnki44nmZHQXn87uUqFqgC4lQC8z/view?usp=sharing" target="_blank">Design_assignment.pdf</a></div>
+</footer>
